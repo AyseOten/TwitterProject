@@ -1,0 +1,668 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif; 
+  }
+
+  html,body {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  body {
+    display: flex;
+    margin:0;
+    padding:0;
+  }
+
+  .all{
+    max-height: 100%;
+    max-width: 100%;
+  }
+  /* Create two columns that floats next to each other */
+  
+  .left {
+    position:relative;
+    float: left;
+    width: 52%;
+    background-color: rgba(29,161,242,0.6);
+    overflow: hidden;
+  }
+  
+  .right {
+    float: right;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+  }
+  
+  .parag{
+    position:absolute;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    top:220px;
+    left:200px;;
+    fill:white;
+
+  }
+
+  .twitter-icon{
+      height: 700PX;;
+      fill: rgba(29,161,242,1.00);
+  }
+
+  .button-giris{
+    color: rgba(29,161,242,1.00);
+    background-color:white;
+    padding: 10px 20px;
+    border-color:rgba(29,161,242,1.00) ;
+    border-radius: 16px;
+    cursor:pointer;
+    width: 100px;
+    height: 39px;
+    text-align: center;
+    border-color: rgba(29,161,242,1.00);
+    background-color: #fff;
+    border: 2px solid rgba(29,161,242,1.00) ;
+  }
+
+  .button-giris:hover {
+    color: white;
+    background-color:  rgb(171, 214, 243);
+  }
+
+  .tel-giris{
+    background-color:#f2f2f2;
+    display: flex;
+    flex-direction: column-reverse;
+    /* border-bottom: 2px solid gray; */
+
+    width: 210px;
+  }
+
+  .sifre-giris{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color:#f2f2f2;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 190px;
+}
+
+.girisler{
+    color:black;
+    display: flex;
+    font-weight: lighter;
+    height: 58px;
+  
+}
+
+.right form{
+  display: flex;
+  flex-direction:column;
+
+}
+
+/* 3 nokta ile sınırlama */
+#adi{
+  height: 50px;
+  white-space: nowrap; 
+  -webkit-line-clamp: 3;
+  overflow:hidden;
+  text-overflow: ellipsis; 
+}
+
+#inp-adi{
+  border-bottom: grey 2px solid ;
+}
+
+/* focus kısmı */
+
+#inp-adi:focus{
+  border-bottom: rgba(29,161,242,1.00) 2px solid;
+}
+
+#inp-adi:focus + #adi{
+  color: rgba(29,161,242,1.00);
+}
+
+#inp-sifre{
+  border-bottom: grey 2px solid ;
+}
+
+#inp-sifre:focus{
+  border-bottom: rgba(29,161,242,1.00) 2px solid;
+}
+
+#inp-sifre:focus + #sifre{
+  color: rgba(29,161,242,1.00);
+}
+
+.girisler label{
+  padding-left: 1em;
+}
+
+.girisler input{
+  height: 100%;
+}
+
+
+.head{
+  font-size: medium;
+}
+
+.paragraph{
+  padding: 30px;
+}
+
+.img-twit{
+  display: flex;
+  align-items:flex-start;
+}
+  
+.input{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+}
+
+input:focus{
+  outline-color:rgba(29,161,242,1.00) ;
+  outline: none;
+
+}
+
+.right-bottom{
+  margin-top:100px;
+  display:flex;
+  flex-direction: column;
+  margin-left: 150px;
+  margin-right: 150px;
+ 
+}
+
+.icon-letter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-letter p{
+  padding-left: 15px;
+}
+.icon-letter pre{
+  padding-left: 15px;
+}
+
+.right input{
+  border:0;
+  background-color: #f2f2f2; ;
+}
+
+
+.button-register{
+  border: 0;
+  color: white;
+  background-color: rgba(29,161,242,1.00);
+  padding: 10px 20px;
+  cursor: pointer;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  width: 380px;
+  height: 39px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.button-girisyap{
+  color: rgba(29,161,242,1.00);
+  background-color:white;
+  padding: 10px 20px;
+  border-color:rgba(29,161,242,1.00) ;
+  border-radius: 16px;
+  cursor:pointer;
+  width: 380px;
+  height: 39px;
+  text-align: center;
+  border-color: rgba(29,161,242,1.00);
+  background-color: #fff;
+  border: 2px solid rgba(29,161,242,1.00) ;
+  margin-top: 10px;
+}
+
+.button-register:hover {
+  color:white;
+  background-color: rgb(43, 144, 207);
+}
+
+.button-girisyap:hover {
+  color: white;
+  background-color:  rgb(171, 214, 243);
+}
+
+a.link {  
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+  margin-top:5px;
+  color: rgb(20, 152, 235);
+  text-decoration: none;
+  vertical-align: baseline;
+  font-weight:lighter ;
+  font-size: small;
+
+}
+   
+a.link:hover {
+  text-decoration: underline;
+  vertical-align: baseline;
+}
+
+.bottom-screen {
+  box-sizing: border-box;
+  width:100%;
+  height: 100%;
+  height: 30px;
+  word-wrap:normal;
+
+  font-weight:normal;
+  color: black;
+  font-size: small;
+
+
+  padding-left: 80px ;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  color: rgb(101, 119, 134);
+}
+
+a.link-alt{
+  text-decoration: none;
+  vertical-align: baseline;
+  font-weight:lighter ;
+  font-size: small;
+  color:black;
+}
+
+a.link-alt:hover{
+  text-decoration: underline;
+  vertical-align: baseline;
+}
+
+.top-screen {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 1270px) and (min-width: 1042px) {
+
+} 
+ 
+ @media screen and (max-width: 1042px) and (min-width: 621px) {
+  
+   div.input{
+     display: none;
+   }
+
+   a.link{
+     display: none;
+   }
+ }
+ 
+ @media screen and (max-width:621px){
+ 
+   /* yanyana değil alt alta almak için */
+   .top-screen{
+     display: flex;
+     flex-direction: column-reverse;
+   }
+   .left,.right{
+     width: 100%;
+   }  
+
+   a.link{
+    display: none;
+  }
+ 
+   div.input{
+     display: none;
+   }
+ 
+   div.bottom-screen{
+     display: none;
+   }
+ }
+
+.modal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content{ 
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  padding: 20px 15px 20px 40px;
+  border: 1px solid #888; 
+  border-radius:10px;
+  width: 40%;
+  height: 95%;
+  margin:auto
+}
+
+/*yeni form*/
+.header-register{
+  display:flex;
+  justify-content: space-between ;
+}
+
+.img-twit-register{
+ display: flex;
+ margin-left:250px;
+}
+
+.ileri-button{
+  border: 0;
+  color: white;
+  background-color: rgba(29,161,242,0.6);
+  cursor: pointer;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  width:59px;
+  height: 30px;
+  text-align: center;
+}
+
+/* hesabını oluştur */
+.hesap{
+  padding:10px 10px 10px 0px;
+}
+
+/* isim ve telefon no aldığı yer*/
+/* isim */
+.register-girisler{
+  color:black;
+  display: flex;
+  font-weight: lighter;
+}
+
+.register-name{
+  background-color:#f2f2f2;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  width: 500px;
+}
+
+#register-adi{
+  height: 40px;
+  padding-left: 10px;
+}
+
+#register-inp-adi{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: grey 2px solid ;
+  background-color:#f2f2f2;
+  height:20px;
+}
+
+#register-inp-adi:focus{
+  border-bottom: rgba(29,161,242,1.00) 2px solid;
+}
+
+#register-inp-adi:focus + #register-adi{
+  color: rgba(29,161,242,1.00);
+}
+
+.numberchar{
+  display: flex;
+  justify-content: flex-end;
+  margin-right:70px;
+  color:gray;
+  padding-bottom: 20px;;
+
+}
+
+/* telefon */
+
+.register-tel{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-color:#f2f2f2;
+  width: 500px;
+}
+
+#register-tel{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: grey 2px solid ;
+  background-color:#f2f2f2;
+  height: 20px;
+}
+
+#register-tel:focus{
+  border-bottom: rgba(29,161,242,1.00) 2px solid;
+}
+
+#register-tel:focus + #reg-tel{
+  color: rgba(29,161,242,1.00);
+}
+
+#reg-tel{
+  height: 40px;
+  padding-left: 10px;
+}
+
+/* eposta */
+a.link-eposta {  
+  display: flex;
+  margin-top:20px;
+  margin-bottom: 30px;
+  color: rgb(20, 152, 235);
+  text-decoration: none;
+  vertical-align: baseline;
+
+  font-size: medium;
+}
+   
+a.link-eposta:hover {
+  text-decoration: underline;
+  vertical-align: baseline;
+}
+
+/* yazi */
+.modal-yazi{
+  color: grey;
+
+}
+
+/* select decotated*/
+optgroup{
+  font-size: large;
+}
+
+/* year.decorated option:hover {
+  box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+
+year.decorated option {
+  font-size: large;
+} */
+
+/* date kısmı */
+.date-register{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.date-register select{
+  border:0;
+}
+
+/* month */
+.month-register{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color:#f2f2f2;
+  margin-right: 15px;
+  width: 239px;
+  height:60px;
+}
+
+#month{
+  outline: none;
+
+  border-bottom: grey 2px solid ;
+  background-color:#f2f2f2;
+
+  /* oku kaldırma */
+  -webkit-appearance: none;
+  appearance: none;
+
+  height: 30px;
+}
+
+#month:focus{
+  border-bottom: rgba(29,161,242,1.00) 2px solid;
+}
+
+#month:focus + #month-label + svg{
+  color: rgba(29,161,242,1.00);
+  fill: rgba(29,161,242,1.00);
+}
+
+#month-label{
+  padding-left: 10px;
+  height: 100px;
+  width:50px;
+} 
+
+.arrow-month{
+  position: absolute;
+  width:25px; 
+  height:25px;
+  margin-left: 205px;
+  fill: gray;
+  
+}
+
+
+/* day */ 
+.day-register{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color:#f2f2f2;
+  margin-right: 15px;
+  width: 129px;
+  height:60px;
+}
+
+#day{
+  outline: none;
+  border-bottom: grey 2px solid ;
+  background-color:#f2f2f2;
+
+    /* oku kaldırma */
+  -webkit-appearance: none;
+  appearance: none;
+
+  height: 30px;
+}
+
+#day:focus{
+  border-bottom: rgba(29,161,242,1.00) 2px solid;
+}
+
+#day:focus + #day-label + svg{
+  color: rgba(29,161,242,1.00);
+  fill: rgba(29,161,242,1.00);
+}
+
+#day-label{
+  padding-left: 10px;
+  height: 100px;
+  width:50px
+} 
+
+.arrow-day{
+  position: absolute;
+  width:25px; 
+  height:25px;
+  margin-left: 95px;
+  fill: gray;
+  
+}
+
+/*year */ 
+.year-register{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color:#f2f2f2;
+  margin-right: 15px;
+  width: 150px;
+  height:60px;
+}
+
+#year{
+  outline: none;
+  border-bottom: grey 2px solid ;
+  background-color:#f2f2f2;
+
+    /* oku kaldırma */
+  -webkit-appearance: none;
+  appearance: none;
+
+  height: 30px;
+}
+
+#year:focus{
+  border-bottom: rgba(29,161,242,1.00) 2px solid;
+}
+
+#year:focus + #year-label + svg{
+  color: rgba(29,161,242,1.00);
+  fill: rgba(29,161,242,1.00);
+}
+
+#year-label{
+  padding-left: 10px;
+  height: 100px;
+  width:30px;
+} 
+
+.arrow-year{
+  position: absolute;
+  width:25px; 
+  height:25px;
+  margin-left: 120px;
+  fill: gray;
+}
